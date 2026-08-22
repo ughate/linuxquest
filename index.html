@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LinuxQuest — Linux & Networking Learning Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🐧 LinuxQuest</h1>
+      <p>Learn Linux & Networking by solving missions.</p>
+    </div>
+    <div id="status">Loading Python engine…</div>
+  </header>
+
+  <main>
+    <section id="terminal" aria-label="LinuxQuest terminal"></section>
+    <div class="controls">
+      <button id="restart">Restart</button>
+      <button id="clear">Clear terminal</button>
+    </div>
+  </main>
+
+  <footer>
+    <span>Runs entirely in your browser using Pyodide + WebAssembly.</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/xterm@5.3.0/lib/xterm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.8.0/lib/xterm-addon-fit.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.28.2/full/pyodide.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
